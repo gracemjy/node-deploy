@@ -1,0 +1,45 @@
+{
+  "name": "nodebird",
+  "version": "0.0.1",
+  "description": "익스프레스로 만드는 SNS 서비스",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production PORT=80 pm2 start server.js -i 0",
+    "dev": "nodemon server",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gracemjy/nodejs_practice"
+  },
+  "author": "mjy",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-redis": "^6.1.0",
+    "cookie-parser": "^1.4.6",
+    "cross-env": "^7.0.3",
+    "csurf": "^1.11.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "helmet": "^5.0.2",
+    "hpp": "^0.2.3",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "nunjucks": "^3.2.3",
+    "passport": "^0.5.2",
+    "passport-kakao": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "pm2": "^5.1.2",
+    "redis": "^4.0.3",
+    "sanitize-html": "^2.7.0",
+    "sequelize": "^6.12.5",
+    "sequelize-cli": "^6.3.0",
+    "winston": "^3.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
